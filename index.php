@@ -1,3 +1,4 @@
+<?php header('X-Commit: ' . (getenv('SOURCE_COMMIT') ?: 'dev')); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
