@@ -8,12 +8,12 @@ on:
 jobs:
   ploi-deploy:
     name: 'Ploi Deploy'
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64, projects-server, build]
 
     steps:
       # Checkout the repository to the GitHub Actions runner
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # Trigger Ploi deploy webhook
       - name: Deploy
